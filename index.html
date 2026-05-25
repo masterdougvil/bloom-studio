@@ -152,7 +152,7 @@ nav.scrolled{background:rgba(253,251,248,0.95);backdrop-filter:blur(20px);border
 .p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3.5rem}
 .p-card{background:var(--cream2);border:1px solid var(--border);border-radius:4px;padding:2.4rem;position:relative;transition:all 0.4s var(--ease)}
 .p-card.feat{border-color:var(--gold);background:var(--cream)}
-.p-card.feat::before{content:'Más Popular';position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;padding:0.28rem 1rem;border-radius:0 0 4px 4px;font-family:var(--sans);font-weight:500;white-space:nowrap}
+.p-card.feat::before{content:'Most Popular';position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;padding:0.28rem 1rem;border-radius:0 0 4px 4px;font-family:var(--sans);font-weight:500;white-space:nowrap}
 .p-card:hover{transform:translateY(-4px);box-shadow:0 20px 48px rgba(201,168,122,0.12)}
 .p-tier{font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);display:block;font-weight:500;margin-bottom:0.8rem}
 .p-name{font-family:var(--serif);font-size:1.55rem;font-weight:400;color:var(--text);margin-bottom:1.4rem}
@@ -246,22 +246,22 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
 <!-- MOB MENU -->
 <div class="mob-menu" id="mobMenu">
   <button class="mob-close" onclick="closeMob()">✕</button>
-  <a href="#categories" onclick="closeMob()">Servicios</a>
-  <a href="#gallery" onclick="closeMob()">Galería</a>
-  <a href="#about" onclick="closeMob()">Nosotros</a>
-  <a href="#pricing" onclick="closeMob()">Precios</a>
-  <a href="#contact" onclick="closeMob()">Reservar</a>
+  <a href="#categories" onclick="closeMob()">Services</a>
+  <a href="#gallery" onclick="closeMob()">Gallery</a>
+  <a href="#about" onclick="closeMob()">About</a>
+  <a href="#pricing" onclick="closeMob()">Pricing</a>
+  <a href="#contact" onclick="closeMob()">Book</a>
 </div>
 
 <!-- NAV -->
 <nav id="nav">
   <a href="#" class="logo"><span class="logo-main">Bloom<span> Studio</span></span><span class="logo-sub">Photography · Miami</span></a>
   <ul class="nav-links">
-    <li><a href="#categories">Servicios</a></li>
-    <li><a href="#gallery">Galería</a></li>
-    <li><a href="#about">Nosotros</a></li>
-    <li><a href="#pricing">Precios</a></li>
-    <li><button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Reservar Sesión</button></li>
+    <li><a href="#categories">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book a Session</button></li>
   </ul>
   <button class="hamburger" onclick="openMob()"><span></span><span></span><span></span></button>
 </nav>
@@ -296,7 +296,7 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
 <section class="sec cats" id="categories">
   <div class="cats-intro">
     <div>
-      <p class="eyebrow reveal">Nuestros Servicios</p>
+      <p class="eyebrow reveal">Our Services</p>
       <h2 class="sec-title reveal">Photography for<br><em>every celebration</em></h2>
     </div>
     <p class="cats-lead reveal">From intimate beach weddings to glamorous quinceañeras — every session is a work of art crafted with intention and light.</p>
@@ -306,36 +306,36 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
       <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80&fit=crop&crop=center" alt="Wedding photography">
       <div class="cat-card-overlay"></div>
       <div class="cat-card-body">
-        <span class="cat-card-label">01 · Celebración</span>
-        <span class="cat-card-title">Bodas</span>
-        <span class="cat-card-arrow">Ver sesiones →</span>
+        <span class="cat-card-label">01 · Celebration</span>
+        <span class="cat-card-title">Weddings</span>
+        <span class="cat-card-arrow">View sessions →</span>
       </div>
     </div>
     <div class="cat-card reveal d1">
       <img src="https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=800&q=80&fit=crop&crop=top" alt="Quinceañera photography">
       <div class="cat-card-overlay"></div>
       <div class="cat-card-body">
-        <span class="cat-card-label">02 · Tradición</span>
+        <span class="cat-card-label">02 · Tradition</span>
         <span class="cat-card-title">Quinceañeras</span>
-        <span class="cat-card-arrow">Ver sesiones →</span>
+        <span class="cat-card-arrow">View sessions →</span>
       </div>
     </div>
     <div class="cat-card reveal d2">
       <img src="https://images.unsplash.com/photo-1627556704302-624286467c65?w=800&q=80&fit=crop&crop=top" alt="Graduation photography">
       <div class="cat-card-overlay"></div>
       <div class="cat-card-body">
-        <span class="cat-card-label">03 · Logro</span>
-        <span class="cat-card-title">Graduación</span>
-        <span class="cat-card-arrow">Ver sesiones →</span>
+        <span class="cat-card-label">03 · Achievement</span>
+        <span class="cat-card-title">Graduation</span>
+        <span class="cat-card-arrow">View sessions →</span>
       </div>
     </div>
     <div class="cat-card reveal d3">
       <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80&fit=crop&crop=center" alt="Events photography">
       <div class="cat-card-overlay"></div>
       <div class="cat-card-body">
-        <span class="cat-card-label">04 · Momentos</span>
-        <span class="cat-card-title">Eventos</span>
-        <span class="cat-card-arrow">Ver sesiones →</span>
+        <span class="cat-card-label">04 · Moments</span>
+        <span class="cat-card-title">Events</span>
+        <span class="cat-card-arrow">View sessions →</span>
       </div>
     </div>
   </div>
@@ -348,7 +348,7 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
   </div>
   <div class="feature-body">
     <span class="feature-num reveal">01</span>
-    <p class="eyebrow reveal">Bodas</p>
+    <p class="eyebrow reveal">Weddings</p>
     <h2 class="sec-title reveal">Your love story,<br>told in <em>light</em></h2>
     <p class="reveal">Every wedding is unique. We capture the emotion, the details, the stolen glances and the joyful tears — all with a cinematic, editorial eye that makes every frame feel like a painting.</p>
     <div class="feature-tags reveal">
@@ -357,7 +357,7 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
       <span class="ftag">Destination</span>
       <span class="ftag">Elopements</span>
     </div>
-    <a href="#pricing" class="feature-link reveal">Ver paquetes de boda →</a>
+    <a href="#pricing" class="feature-link reveal">View wedding packages →</a>
   </div>
 </div>
 
@@ -370,14 +370,14 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
     <span class="feature-num reveal">02</span>
     <p class="eyebrow reveal">Quinceañeras</p>
     <h2 class="sec-title reveal">A princess for<br>a <em>lifetime</em></h2>
-    <p class="reveal">La quinceañera es uno de los momentos más importantes en la vida de una joven. Capturamos cada detalle — el vestido, la tiara, los bailes y las lágrimas de orgullo — con la elegancia que merece.</p>
+    <p class="reveal">The quinceañera is one of the most important milestones in a young woman's life. We capture every detail — the gown, the tiara, the dances and the tears of pride — with the elegance it deserves.</p>
     <div class="feature-tags reveal">
-      <span class="ftag">Sesión de estudio</span>
-      <span class="ftag">Playa</span>
-      <span class="ftag">Evento completo</span>
+      <span class="ftag">Studio Session</span>
+      <span class="ftag">Beach</span>
+      <span class="ftag">Full Event</span>
       <span class="ftag">Trash the Dress</span>
     </div>
-    <a href="#pricing" class="feature-link reveal">Ver paquetes →</a>
+    <a href="#pricing" class="feature-link reveal">View packages →</a>
   </div>
 </div>
 
@@ -388,7 +388,7 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
   </div>
   <div class="feature-body">
     <span class="feature-num reveal">03</span>
-    <p class="eyebrow reveal">Graduación</p>
+    <p class="eyebrow reveal">Graduation</p>
     <h2 class="sec-title reveal">The beginning of<br>something <em>extraordinary</em></h2>
     <p class="reveal">Years of hard work, late nights and dedication — all leading to this moment. We create graduation portraits that feel as significant as the achievement itself, with a style that's confident, modern and timeless.</p>
     <div class="feature-tags reveal">
@@ -397,7 +397,7 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
       <span class="ftag">Masters & Doctoral</span>
       <span class="ftag">Class Photos</span>
     </div>
-    <a href="#pricing" class="feature-link reveal">Ver paquetes →</a>
+    <a href="#pricing" class="feature-link reveal">View packages →</a>
   </div>
 </div>
 
@@ -408,40 +408,40 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
   </div>
   <div class="feature-body">
     <span class="feature-num reveal">04</span>
-    <p class="eyebrow reveal">Eventos</p>
+    <p class="eyebrow reveal">Events</p>
     <h2 class="sec-title reveal">Every gathering<br>deserves to be <em>remembered</em></h2>
     <p class="reveal">Birthday parties, corporate events, baby showers, anniversaries and everything in between. We bring the same premium eye and emotional storytelling to every event — no matter the size.</p>
     <div class="feature-tags reveal">
-      <span class="ftag">Cumpleaños</span>
+      <span class="ftag">Birthdays</span>
       <span class="ftag">Baby Shower</span>
-      <span class="ftag">Aniversarios</span>
-      <span class="ftag">Corporativo</span>
+      <span class="ftag">Anniversaries</span>
+      <span class="ftag">Corporate</span>
     </div>
-    <a href="#pricing" class="feature-link reveal">Ver paquetes →</a>
+    <a href="#pricing" class="feature-link reveal">View packages →</a>
   </div>
 </div>
 
 <!-- GALLERY -->
 <section class="sec gallery-sec" id="gallery">
-  <p class="eyebrow reveal">Galería</p>
+  <p class="eyebrow reveal">Gallery</p>
   <h2 class="sec-title reveal">Selected <em>moments</em></h2>
   <div class="gallery-filter reveal">
     <button class="gf-btn active" onclick="filterG(this)">All</button>
-    <button class="gf-btn" onclick="filterG(this)">Bodas</button>
+    <button class="gf-btn" onclick="filterG(this)">Weddings</button>
     <button class="gf-btn" onclick="filterG(this)">Quinceañeras</button>
-    <button class="gf-btn" onclick="filterG(this)">Graduación</button>
-    <button class="gf-btn" onclick="filterG(this)">Eventos</button>
+    <button class="gf-btn" onclick="filterG(this)">Graduation</button>
+    <button class="gf-btn" onclick="filterG(this)">Events</button>
   </div>
   <div class="masonry reveal">
-    <div class="m-item asp-tall"><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&q=75&fit=crop" alt="Wedding portrait"><div class="m-item-over"><span class="m-tag">Bodas</span></div></div>
-    <div class="m-item asp-med"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75&fit=crop" alt="Outdoor portrait"><div class="m-item-over"><span class="m-tag">Sesión</span></div></div>
-    <div class="m-item asp-port"><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=75&fit=crop" alt="Bride"><div class="m-item-over"><span class="m-tag">Bodas</span></div></div>
-    <div class="m-item asp-sq"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=75&fit=crop" alt="Graduation"><div class="m-item-over"><span class="m-tag">Graduación</span></div></div>
+    <div class="m-item asp-tall"><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&q=75&fit=crop" alt="Wedding portrait"><div class="m-item-over"><span class="m-tag">Weddings</span></div></div>
+    <div class="m-item asp-med"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75&fit=crop" alt="Outdoor portrait"><div class="m-item-over"><span class="m-tag">Session</span></div></div>
+    <div class="m-item asp-port"><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=75&fit=crop" alt="Bride"><div class="m-item-over"><span class="m-tag">Weddings</span></div></div>
+    <div class="m-item asp-sq"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=75&fit=crop" alt="Graduation"><div class="m-item-over"><span class="m-tag">Graduation</span></div></div>
     <div class="m-item asp-tall"><img src="https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600&q=75&fit=crop" alt="Quince dress"><div class="m-item-over"><span class="m-tag">Quinceañera</span></div></div>
-    <div class="m-item asp-wide"><img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&q=75&fit=crop" alt="Event"><div class="m-item-over"><span class="m-tag">Eventos</span></div></div>
-    <div class="m-item asp-med"><img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=75&fit=crop" alt="Wedding beach"><div class="m-item-over"><span class="m-tag">Bodas</span></div></div>
-    <div class="m-item asp-port"><img src="https://images.unsplash.com/photo-1627556704302-624286467c65?w=600&q=75&fit=crop" alt="Graduation portrait"><div class="m-item-over"><span class="m-tag">Graduación</span></div></div>
-    <div class="m-item asp-sq"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=75&fit=crop" alt="Event crowd"><div class="m-item-over"><span class="m-tag">Eventos</span></div></div>
+    <div class="m-item asp-wide"><img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&q=75&fit=crop" alt="Event"><div class="m-item-over"><span class="m-tag">Events</span></div></div>
+    <div class="m-item asp-med"><img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=75&fit=crop" alt="Wedding beach"><div class="m-item-over"><span class="m-tag">Weddings</span></div></div>
+    <div class="m-item asp-port"><img src="https://images.unsplash.com/photo-1627556704302-624286467c65?w=600&q=75&fit=crop" alt="Graduation portrait"><div class="m-item-over"><span class="m-tag">Graduation</span></div></div>
+    <div class="m-item asp-sq"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=75&fit=crop" alt="Event crowd"><div class="m-item-over"><span class="m-tag">Events</span></div></div>
   </div>
 </section>
 
@@ -451,7 +451,7 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
     <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=900&q=80&fit=crop&crop=center" alt="Photographer at work">
   </div>
   <div class="about-body">
-    <p class="eyebrow reveal">Nuestra historia</p>
+    <p class="eyebrow reveal">Our Story</p>
     <h2 class="sec-title reveal">We believe photography<br>should feel <em>honest,</em><br>alive and timeless.</h2>
     <div class="about-pull reveal">"Every session is a conversation between light, emotion and the people who trust us with their most beautiful moments."</div>
     <p class="reveal">Bloom Studio was born from a simple belief: that every family, every couple, every graduate deserves imagery that captures not just what they look like — but how they feel.</p>
@@ -468,14 +468,14 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
 
 <!-- PRICING -->
 <section class="sec pricing-sec" id="pricing">
-  <p class="eyebrow reveal">Paquetes</p>
+  <p class="eyebrow reveal">Packages</p>
   <h2 class="sec-title reveal">Simple, transparent <em>pricing</em></h2>
   <div class="p-grid">
     <div class="p-card reveal">
-      <span class="p-tier">Esencial</span>
+      <span class="p-tier">Essential</span>
       <h3 class="p-name">The Session</h3>
       <div class="p-price"><sup>$</sup>450</div>
-      <span class="p-period">por sesión · 1.5 horas</span>
+      <span class="p-period">per session · 1.5 hours</span>
       <hr class="p-div">
       <ul class="p-feats">
         <li class="hi">1.5-hour session</li>
@@ -491,7 +491,7 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
       <span class="p-tier">Signature</span>
       <h3 class="p-name">The Experience</h3>
       <div class="p-price"><sup>$</sup>850</div>
-      <span class="p-period">por sesión · 3 horas</span>
+      <span class="p-period">per session · 3 hours</span>
       <hr class="p-div">
       <ul class="p-feats">
         <li class="hi">3-hour session</li>
@@ -507,7 +507,7 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
       <span class="p-tier">Full Day</span>
       <h3 class="p-name">The Collection</h3>
       <div class="p-price"><sup>$</sup>2,400</div>
-      <span class="p-period">día completo · 8 horas</span>
+      <span class="p-period">full day · 8 hours</span>
       <hr class="p-div">
       <ul class="p-feats">
         <li class="hi">Full 8-hour coverage</li>
@@ -520,25 +520,25 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
       <button class="p-btn p-btn-o" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book This Package</button>
     </div>
   </div>
-  <p class="pricing-note reveal">Bodas, quinceañeras y eventos completos se cotizan individualmente. <a href="#contact">Contáctenos</a> para un presupuesto personalizado.</p>
+  <p class="pricing-note reveal">Weddings, quinceañeras and full events are quoted individually. <a href="#contact">Contact us</a> for a custom quote.</p>
 </section>
 
 <!-- TESTIMONIALS -->
 <section class="sec testi-sec" id="testimonials">
-  <p class="eyebrow reveal">Testimonios</p>
+  <p class="eyebrow reveal">Testimonials</p>
   <h2 class="sec-title reveal">What our clients <em>say</em></h2>
   <div class="t-grid">
     <div class="t-card reveal">
       <span class="t-stars">★★★★★</span>
-      <p class="t-text">"Las fotos de nuestra boda son más hermosas de lo que jamás imaginamos. Cada imagen parece sacada de una revista — llena de luz y emoción real."</p>
+      <p class="t-text">"Our wedding photos are more beautiful than we ever imagined. Each image looks like it came from a magazine — full of light and genuine emotion."</p>
       <div class="t-author">
         <div class="t-av" style="background:linear-gradient(135deg,#e8d0b8,#c9a87a)"></div>
-        <div><p class="t-name">Daniela &amp; Marco</p><p class="t-role">Boda · Miami Beach</p></div>
+        <div><p class="t-name">Daniela &amp; Marco</p><p class="t-role">Wedding · Miami Beach</p></div>
       </div>
     </div>
     <div class="t-card reveal d1">
       <span class="t-stars">★★★★★</span>
-      <p class="t-text">"La quinceañera de mi hija quedó perfecta. Andrea capturó cada momento mágico — la primera danza, las lágrimas de felicidad. Las fotos son un tesoro para siempre."</p>
+      <p class="t-text">"My daughter's quinceañera was perfect. Andrea captured every magical moment — the first dance, the tears of happiness. The photos are a treasure forever."</p>
       <div class="t-author">
         <div class="t-av" style="background:linear-gradient(135deg,#d0c8e8,#b0a8c8)"></div>
         <div><p class="t-name">Familia Rodríguez</p><p class="t-role">Quinceañera · Coral Gables</p></div>
@@ -549,7 +549,7 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
       <p class="t-text">"My graduation photos exceeded every expectation. The team made me feel completely at ease and the final images are stunning — confident, elegant and completely me."</p>
       <div class="t-author">
         <div class="t-av" style="background:linear-gradient(135deg,#b8d4c0,#88b8a0)"></div>
-        <div><p class="t-name">Sofia M.</p><p class="t-role">Graduación · University of Miami</p></div>
+        <div><p class="t-name">Sofia M.</p><p class="t-role">Graduation · University of Miami</p></div>
       </div>
     </div>
   </div>
@@ -562,7 +562,7 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
   </div>
   <div class="cta-bg-ov"></div>
   <div class="cta-inner">
-    <div class="cta-avail reveal"><div class="cta-dot"></div>Disponibilidad limitada 2026</div>
+    <div class="cta-avail reveal"><div class="cta-dot"></div>Limited Availability 2026</div>
     <h2 class="cta-title reveal">Let's create something<br><em>beautiful together</em></h2>
     <p class="cta-sub reveal">Each session is thoughtfully planned and personally crafted. We'd love to hear about your vision.</p>
     <button class="btn-gold reveal" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Schedule Your Session</button>
@@ -571,43 +571,43 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
 
 <!-- CONTACT -->
 <section class="sec contact-sec" id="contact">
-  <p class="eyebrow reveal">Contáctenos</p>
+  <p class="eyebrow reveal">Contact Us</p>
   <h2 class="sec-title reveal">Book Your <em>Session</em></h2>
   <div class="c-layout">
     <div class="reveal">
       <div class="c-info-item"><span class="c-label">Email</span><span class="c-val">hello@bloomstudio.com</span></div>
-      <div class="c-info-item"><span class="c-label">Ubicación</span><span class="c-val">Miami, Florida</span></div>
-      <div class="c-info-item"><span class="c-label">Disponibilidad</span><span class="c-val">Local &amp; Destinos Internacionales</span></div>
-      <div class="c-info-item"><span class="c-label">Respuesta</span><span class="c-val">Dentro de 24 horas</span></div>
-      <div class="c-info-item"><span class="c-label">Idiomas</span><span class="c-val">English / Español</span></div>
-      <p class="c-note">"Respondemos personalmente a cada consulta. Cuéntenos su visión y creemos algo inolvidable juntos." — Bloom Studio</p>
+      <div class="c-info-item"><span class="c-label">Location</span><span class="c-val">Miami, Florida</span></div>
+      <div class="c-info-item"><span class="c-label">Availability</span><span class="c-val">Local &amp; International Destinations</span></div>
+      <div class="c-info-item"><span class="c-label">Response</span><span class="c-val">Within 24 hours</span></div>
+      <div class="c-info-item"><span class="c-label">Languages</span><span class="c-val">English / Spanish</span></div>
+      <p class="c-note">"We personally respond to every inquiry. Share your vision and let's create something unforgettable together." — Bloom Studio</p>
     </div>
     <div class="reveal">
       <form class="c-form" id="cForm" onsubmit="submitForm(event)">
-        <div class="fg"><label class="fl">Nombre *</label><input class="fi" type="text" placeholder="Tu nombre" required></div>
-        <div class="fg"><label class="fl">Apellido *</label><input class="fi" type="text" placeholder="Tu apellido" required></div>
+        <div class="fg"><label class="fl">First Name *</label><input class="fi" type="text" placeholder="Your first name" required></div>
+        <div class="fg"><label class="fl">Last Name *</label><input class="fi" type="text" placeholder="Your last name" required></div>
         <div class="fg"><label class="fl">Email *</label><input class="fi" type="email" placeholder="tu@email.com" required></div>
-        <div class="fg"><label class="fl">Teléfono</label><input class="fi" type="tel" placeholder="+1 (305) 000-0000"></div>
-        <div class="fg full"><label class="fl">Tipo de Sesión *</label>
+        <div class="fg"><label class="fl">Phone</label><input class="fi" type="tel" placeholder="+1 (305) 000-0000"></div>
+        <div class="fg full"><label class="fl">Session Type *</label>
           <select class="fs" required>
-            <option value="" disabled selected>Selecciona un servicio...</option>
-            <option>Boda</option>
+            <option value="" disabled selected>Select a service...</option>
+            <option>Wedding</option>
             <option>Quinceañera</option>
-            <option>Graduación</option>
-            <option>Evento / Celebración</option>
-            <option>Sesión de Familia</option>
-            <option>Sesión de Playa</option>
-            <option>Branding / Empresa</option>
-            <option>Otro</option>
+            <option>Graduation</option>
+            <option>Event / Celebration</option>
+            <option>Family Session</option>
+            <option>Beach Session</option>
+            <option>Branding / Business</option>
+            <option>Other</option>
           </select>
         </div>
-        <div class="fg full"><label class="fl">Fecha Preferida</label><input class="fi" type="date"></div>
-        <div class="fg full"><label class="fl">Cuéntanos tu visión *</label><textarea class="ft" placeholder="Describe tu sesión ideal — lugar, ambiente, qué es más importante para ti..." required></textarea></div>
-        <div class="f-submit"><button type="submit" class="btn-gold">Enviar Mi Consulta →</button></div>
+        <div class="fg full"><label class="fl">Preferred Date</label><input class="fi" type="date"></div>
+        <div class="fg full"><label class="fl">Tell Us Your Vision *</label><textarea class="ft" placeholder="Describe your ideal session — location, mood, what matters most to you..." required></textarea></div>
+        <div class="f-submit"><button type="submit" class="btn-gold">Submit My Inquiry →</button></div>
       </form>
       <div class="f-success" id="fSuccess">
         <div style="font-size:2rem;color:var(--gold);margin-bottom:1rem">✦</div>
-        <p style="font-family:var(--serif);font-size:1.2rem;font-style:italic;color:var(--text)">"Gracias — te contactaremos dentro de 24 horas."</p>
+        <p style="font-family:var(--serif);font-size:1.2rem;font-style:italic;color:var(--text)">"Thank you — we will be in touch within 24 hours."</p>
         <small style="font-size:0.76rem;color:var(--muted);display:block;margin-top:0.5rem">— Bloom Studio Photography</small>
       </div>
     </div>
@@ -619,10 +619,10 @@ footer{background:var(--cream2);border-top:1px solid var(--border);padding:3rem 
   <div class="ft-top">
     <a href="#" class="logo"><span class="logo-main">Bloom<span> Studio</span></span><span class="logo-sub">Photography · Miami</span></a>
     <ul class="ft-nav">
-      <li><a href="#categories">Servicios</a></li>
-      <li><a href="#gallery">Galería</a></li>
-      <li><a href="#about">Nosotros</a></li>
-      <li><a href="#pricing">Precios</a></li>
+      <li><a href="#categories">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#pricing">Pricing</a></li>
       <li><a href="#contact">Contacto</a></li>
     </ul>
     <div class="ft-right">
