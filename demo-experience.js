@@ -13,8 +13,8 @@
     opener = document.activeElement;
     dialog.querySelector('h2').textContent = title;
     const choices = Array.from(document.querySelectorAll('select')).map(s => s.options[s.selectedIndex]?.textContent).filter(Boolean);
-    const result = document.querySelector('aside.answer, aside.result, .result, [id="selectedDate"]');
-    dialog.querySelector('#demoReviewSummary').textContent = description || [choices.join(' · '), result?.innerText || 'Explore the options, then return here to complete the simulated journey.'].join('\n');
+    const result = document.querySelector('aside.estimate-result, aside.answer, aside.result, .result, [id="selectedDate"]');
+    dialog.querySelector('#demoReviewSummary').textContent = description || [choices.join(' · '), result?.innerText || result?.textContent || 'Explore the options, then return here to complete the simulated journey.'].join('\n');
     dialog.querySelector('#demoReviewStatus').textContent = '';
     dialog.querySelector('#demoReviewConfirm').hidden = false;
     if(!dialog.open) dialog.showModal();
