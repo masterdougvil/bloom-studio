@@ -33,5 +33,8 @@ const base={wedding:420,quince:360,graduation:220,portrait:190,corporate:320};co
 function calculate(){const type=eventType.value,h=Number(hours.value),travel=Number(distance.value);let total=base[type]+hourly[type]*h;let rows=[[labels[type]+' base','$'+base[type]], [h+' hours coverage','$'+(hourly[type]*h)]];extras.forEach(x=>{if(x.checked){total+=Number(x.value);rows.push([x.dataset.name,'$'+x.value])}});if(travel){total+=travel;rows.push(['Travel','$'+travel])}price.textContent='$'+total.toLocaleString();summary.textContent=`Estimated starting range for a ${labels[type].toLowerCase()} with ${h} hours of coverage.`;breakdown.innerHTML=rows.map(r=>`<div class="estimate-row"><span>${r[0]}</span><strong>${r[1]}</strong></div>`).join('')}
 [eventType,hours,distance,...extras].forEach(el=>el.addEventListener('change',calculate));calculate();
 </script>
+
+<script src="demo-experience.js"></script>
 </body>
+
 </html>
