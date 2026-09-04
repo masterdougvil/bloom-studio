@@ -9,8 +9,11 @@
     .demo-skip-link:focus { transform:translateY(0); }
     @media (max-width:480px) {
       .demo-notice { padding:10px 14px !important; font-size:11px !important; line-height:1.4 !important; }
+      .demo-notice-long { display:none !important; }
+      .demo-notice-short { display:inline !important; }
       .badge, .concept { display:none !important; }
     }
+    .demo-notice-short { display:none; }
   `;
   document.head.append(accessibilityStyle);
   const mainTarget = document.querySelector('main, #hero, #home, section');
@@ -24,7 +27,7 @@
   }
   const banner = document.createElement('aside');
   banner.className = 'demo-notice';
-  banner.textContent = 'INTERACTIVE PORTFOLIO DEMO — Sample business, prices, people, reviews and availability. Nothing here books, pays, sends a message or provides professional advice.';
+  banner.innerHTML = '<span class="demo-notice-long">INTERACTIVE PORTFOLIO DEMO — Sample business, prices, people, reviews and availability. Nothing here books, pays, sends a message or provides professional advice.</span><span class="demo-notice-short">PORTFOLIO DEMO — No real booking, payment or message is sent.</span>';
   Object.assign(banner.style, {position:'relative',zIndex:10000,background:'#242b31',color:'#fff',padding:'16px 24px',font:'14px/1.5 system-ui'});
   document.body.prepend(banner);
   const dialog = document.createElement('dialog');
