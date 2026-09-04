@@ -33,6 +33,12 @@
   if(window.matchMedia?.('(max-width:480px)').matches){
     banner.textContent = 'PORTFOLIO DEMO — No real booking, payment or message is sent.';
     document.querySelectorAll('.badge, .concept').forEach(label => { label.hidden = true; label.style.setProperty('display','none','important'); });
+    const bloomNav = document.querySelector('nav.nav');
+    if(document.title.includes('Bloom Studio') && bloomNav){
+      bloomNav.style.position = 'sticky';
+      bloomNav.style.inset = 'auto';
+      bloomNav.style.top = '0';
+    }
   }
   const dialog = document.createElement('dialog');
   dialog.setAttribute('aria-labelledby','demoReviewTitle');
