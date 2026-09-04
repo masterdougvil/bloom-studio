@@ -15,6 +15,7 @@
       dialog.demo-dialog { max-height:calc(100dvh - 32px) !important; overflow-y:auto !important; padding:18px !important; font-size:14px !important; }
       dialog.demo-dialog h2 { margin:0 0 10px; font-size:24px; line-height:1.15; }
       dialog.demo-dialog button { display:block; width:100%; margin:8px 0; padding:12px; border:1px solid #bbb; border-radius:999px; background:#fff; color:#242b31; font:600 14px/1.2 system-ui; }
+      dialog.demo-dialog button[hidden] { display:none !important; }
       dialog.demo-dialog p { margin:10px 0; }
       dialog.demo-dialog a { display:block; overflow-wrap:anywhere; }
     }
