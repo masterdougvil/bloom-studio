@@ -7,6 +7,10 @@
     }
     .demo-skip-link { position:fixed; left:16px; top:8px; z-index:20000; padding:10px 14px; background:#fff; color:#111; border-radius:8px; transform:translateY(-160%); }
     .demo-skip-link:focus { transform:translateY(0); }
+    @media (max-width:480px) {
+      .demo-notice { padding:10px 14px !important; font-size:11px !important; line-height:1.4 !important; }
+      .badge, .concept { display:none !important; }
+    }
   `;
   document.head.append(accessibilityStyle);
   const mainTarget = document.querySelector('main, #hero, #home, section');
@@ -19,6 +23,7 @@
     document.body.prepend(skip);
   }
   const banner = document.createElement('aside');
+  banner.className = 'demo-notice';
   banner.textContent = 'INTERACTIVE PORTFOLIO DEMO — Sample business, prices, people, reviews and availability. Nothing here books, pays, sends a message or provides professional advice.';
   Object.assign(banner.style, {position:'relative',zIndex:10000,background:'#242b31',color:'#fff',padding:'16px 24px',font:'14px/1.5 system-ui'});
   document.body.prepend(banner);
