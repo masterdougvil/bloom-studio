@@ -1,4 +1,23 @@
 (() => {
+  const accessibilityStyle = document.createElement('style');
+  accessibilityStyle.textContent = `
+    :where(a,button,input,select,textarea,[role="button"]):focus-visible {
+      outline: 3px solid #0b74de !important;
+      outline-offset: 3px !important;
+    }
+    .demo-skip-link { position:fixed; left:16px; top:8px; z-index:20000; padding:10px 14px; background:#fff; color:#111; border-radius:8px; transform:translateY(-160%); }
+    .demo-skip-link:focus { transform:translateY(0); }
+  `;
+  document.head.append(accessibilityStyle);
+  const mainTarget = document.querySelector('main, #hero, #home, section');
+  if(mainTarget){
+    if(!mainTarget.id) mainTarget.id = 'demo-main-content';
+    const skip = document.createElement('a');
+    skip.className = 'demo-skip-link';
+    skip.href = '#' + mainTarget.id;
+    skip.textContent = 'Skip to main content';
+    document.body.prepend(skip);
+  }
   const banner = document.createElement('aside');
   banner.textContent = 'INTERACTIVE PORTFOLIO DEMO — Sample business, prices, people, reviews and availability. Nothing here books, pays, sends a message or provides professional advice.';
   Object.assign(banner.style, {position:'relative',zIndex:10000,background:'#242b31',color:'#fff',padding:'16px 24px',font:'14px/1.5 system-ui'});
@@ -48,6 +67,24 @@
   document.querySelectorAll('form input:not([type=hidden]),form textarea').forEach(input => {
     input.removeAttribute('required');
     input.placeholder = 'Demo only — do not enter personal information';
+  });
+  document.querySelectorAll('label:not([for])').forEach((label, index) => {
+    const control = label.querySelector('input,select,textarea') || label.parentElement?.querySelector('input,select,textarea');
+    if(!control) return;
+    if(!control.id) control.id = `demo-control-${index + 1}`;
+    label.htmlFor = control.id;
+  });
+  document.querySelectorAll('input:not([type=hidden]),select,textarea').forEach((control, index) => {
+    if(control.getAttribute('aria-label') || control.getAttribute('aria-labelledby') || (control.id && document.querySelector(`label[for="${control.id}"]`)) || control.closest('label')) return;
+    control.setAttribute('aria-label', control.getAttribute('placeholder') || control.name || `Demo control ${index + 1}`);
+  });
+  document.querySelectorAll('[onclick]').forEach(control => {
+    if(control.matches('a,button,input,select,textarea') || control.hasAttribute('tabindex')) return;
+    control.setAttribute('role','button');
+    control.tabIndex = 0;
+    control.addEventListener('keydown', event => {
+      if(event.key === 'Enter' || event.key === ' '){ event.preventDefault(); control.click(); }
+    });
   });
   document.querySelectorAll('img').forEach(img => {
     const fallback = () => {
