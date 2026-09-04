@@ -30,6 +30,10 @@
   banner.innerHTML = '<span class="demo-notice-long">INTERACTIVE PORTFOLIO DEMO — Sample business, prices, people, reviews and availability. Nothing here books, pays, sends a message or provides professional advice.</span><span class="demo-notice-short">PORTFOLIO DEMO — No real booking, payment or message is sent.</span>';
   Object.assign(banner.style, {position:'relative',zIndex:10000,background:'#242b31',color:'#fff',padding:'16px 24px',font:'14px/1.5 system-ui'});
   document.body.prepend(banner);
+  if(window.matchMedia?.('(max-width:480px)').matches){
+    banner.textContent = 'PORTFOLIO DEMO — No real booking, payment or message is sent.';
+    document.querySelectorAll('.badge, .concept').forEach(label => { label.hidden = true; label.style.setProperty('display','none','important'); });
+  }
   const dialog = document.createElement('dialog');
   dialog.setAttribute('aria-labelledby','demoReviewTitle');
   Object.assign(dialog.style,{maxWidth:'560px',width:'calc(100% - 32px)',padding:'28px',border:'1px solid #ddd',borderRadius:'16px',background:'#fff',color:'#242b31',font:'16px/1.6 system-ui'});
