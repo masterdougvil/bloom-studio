@@ -12,6 +12,11 @@
       .demo-notice-long { display:none !important; }
       .demo-notice-short { display:inline !important; }
       .badge, .concept { display:none !important; }
+      dialog.demo-dialog { max-height:calc(100dvh - 32px) !important; overflow-y:auto !important; padding:18px !important; font-size:14px !important; }
+      dialog.demo-dialog h2 { margin:0 0 10px; font-size:24px; line-height:1.15; }
+      dialog.demo-dialog button { display:block; width:100%; margin:8px 0; padding:12px; border:1px solid #bbb; border-radius:999px; background:#fff; color:#242b31; font:600 14px/1.2 system-ui; }
+      dialog.demo-dialog p { margin:10px 0; }
+      dialog.demo-dialog a { display:block; overflow-wrap:anywhere; }
     }
     .demo-notice-short { display:none; }
   `;
@@ -41,6 +46,7 @@
     }
   }
   const dialog = document.createElement('dialog');
+  dialog.className = 'demo-dialog';
   dialog.setAttribute('aria-labelledby','demoReviewTitle');
   Object.assign(dialog.style,{maxWidth:'560px',width:'calc(100% - 32px)',padding:'28px',border:'1px solid #ddd',borderRadius:'16px',background:'#fff',color:'#242b31',font:'16px/1.6 system-ui'});
   dialog.innerHTML = '<h2 id="demoReviewTitle">Review your demo</h2><p>This simulation stays on this page. Do not enter personal information. No payment or request will be sent.</p><div id="demoReviewSummary" style="white-space:pre-wrap"></div><p id="demoReviewStatus" role="status"></p><button type="button" id="demoReviewConfirm">Complete simulation</button> <button type="button" id="demoReviewClose">Back to demo</button><p><a href="https://sion-united.vercel.app/#contact" target="_blank" rel="noopener">Want a website like this? Request a Sion United proposal →</a></p>';
