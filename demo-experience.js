@@ -7,6 +7,13 @@
     }
     .demo-skip-link { position:fixed; left:16px; top:8px; z-index:20000; padding:10px 14px; background:#fff; color:#111; border-radius:8px; transform:translateY(-160%); }
     .demo-skip-link:focus { transform:translateY(0); }
+    dialog.demo-dialog::backdrop { background:rgba(18,31,43,.46); }
+    dialog.demo-dialog h2 { margin:0 0 10px; font-size:30px; line-height:1.15; }
+    dialog.demo-dialog p { margin:12px 0; }
+    dialog.demo-dialog button { display:inline-flex; align-items:center; justify-content:center; min-height:46px; margin:10px 8px 0 0; padding:11px 20px; border:1px solid #9aa6b2; border-radius:999px; background:#fff; color:#173f67; font:600 15px/1.2 system-ui; cursor:pointer; }
+    dialog.demo-dialog button:first-of-type { background:#173f67; border-color:#173f67; color:#fff; }
+    dialog.demo-dialog button[hidden] { display:none !important; }
+    dialog.demo-dialog a { color:#173f67; font-weight:600; }
     @media (max-width:480px) {
       .demo-notice { padding:10px 14px !important; font-size:11px !important; line-height:1.4 !important; }
       .demo-notice-long { display:none !important; }
